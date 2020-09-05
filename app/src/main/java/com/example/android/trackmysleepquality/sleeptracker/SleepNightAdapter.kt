@@ -101,6 +101,10 @@ class SleepNightAdapter : ListAdapter<SleepNight, SleepNightAdapter.ViewHolder>(
                     else -> R.drawable.ic_sleep_active
                 })
             }
+            fun bind(item: SleepNight) {
+                binding.sleep = item
+                binding.executePendingBindings()
+            }
         }
     }
     class SleepNightDiffCallback : DiffUtil.ItemCallback<SleepNight>() {

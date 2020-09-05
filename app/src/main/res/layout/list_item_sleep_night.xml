@@ -18,13 +18,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    app:sleepImage="@{sleep}"
+    app:sleepDurationFormatted="@{sleep}"
+    app:sleepQualityString="@{sleep}"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <data>
         <variable
-            name="sleep"
-            type="com.example.android.trackmysleepquality.database.SleepNight"/>
+            android:name="sleep"
+
+            android:type="com.example.android.trackmysleepquality.database.SleepNight"/>
     </data>
 
     <ImageView
